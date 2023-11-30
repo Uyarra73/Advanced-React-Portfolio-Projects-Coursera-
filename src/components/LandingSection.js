@@ -15,7 +15,9 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2A4365"
   >
-    <VStack>
+    <VStack
+    color='antiquewhite'
+    >
       <Avatar
         size="3xl"
         name="Alberto Rosell"

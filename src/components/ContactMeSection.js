@@ -30,7 +30,8 @@ const LandingSection = () => {
     },
     onSubmit: (values) => {submit('https://john.com/contactme', values)},
     validationSchema: Yup.object({ 
-      firstName: Yup.string().required("Required"), 
+      firstName: Yup.string()
+      .required("Required"), 
       email: Yup.string().email("Invalid email address").required("Required"), 
       comment: Yup.string() 
         .min(25, "Must be at least 25 characters") 
@@ -58,7 +59,7 @@ const LandingSection = () => {
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
+      <VStack w="1024px" p={32} alignItems="flex-start" color='antiquewhite'>
         <Heading as="h1" id="contactme-section">
           Contact me
         </Heading>
